@@ -1,4 +1,4 @@
-import Triangle from './../src/triangle.js';
+import { Triangle, Angles } from './../src/triangle.js';
 
 describe('Triangle', () => {
 
@@ -24,4 +24,14 @@ describe('Triangle', () => {
     const triangle = new Triangle(5, 5, 6);
     expect(triangle.checkType()).toEqual('isosceles');
   });
+});
+
+describe('Angles', () => {
+test('should correctly create an angle object with three angles', () => {
+  const triangleAngles = new Angles(60, 60, 60);
+  expect(triangleAngles.angle1).toEqual(60);
+  expect(triangleAngles.angle2).toEqual(60);
+  expect(triangleAngles.angle3).toEqual(60);
+});
+
 });

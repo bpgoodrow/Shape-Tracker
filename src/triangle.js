@@ -1,4 +1,4 @@
-export default function Triangle(side1, side2, side3) {
+export function Triangle(side1, side2, side3) {
   this.side1 = side1;
   this.side2 = side2;
   this.side3 = side3;
@@ -15,3 +15,13 @@ Triangle.prototype.checkType = function() {
     return 'isosceles';
   }
 };
+
+export function Angles(angle1, angle2, angle3) {
+  this.angle1 = angle1;
+  this.angle2 = angle2;
+  this.angle3 = angle3;
+}
+
+Angles.prototype.checkDegrees = function() {
+  
+}
