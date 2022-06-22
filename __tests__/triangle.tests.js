@@ -27,11 +27,15 @@ describe('Triangle', () => {
 });
 
 describe('Angles', () => {
-test('should correctly create an angle object with three angles', () => {
-  const triangleAngles = new Angles(60, 60, 60);
-  expect(triangleAngles.angle1).toEqual(60);
-  expect(triangleAngles.angle2).toEqual(60);
-  expect(triangleAngles.angle3).toEqual(60);
-});
+  test('should correctly create an angle object with three angles', () => {
+    const triangleAngles = new Angles(60, 60, 60);
+    expect(triangleAngles.angle1).toEqual(60);
+    expect(triangleAngles.angle2).toEqual(60);
+    expect(triangleAngles.angle3).toEqual(60);
+    });
+  test('should correctly return an object with one angle greater than ninety degrees', () => {
+  const triangleAngles = new Angles(100, 50, 30);
+  expect(triangleAngles.checkDegrees()).toEqual('obtuse');
+  });
 
 });

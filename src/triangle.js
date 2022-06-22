@@ -23,5 +23,7 @@ export function Angles(angle1, angle2, angle3) {
 }
 
 Angles.prototype.checkDegrees = function() {
-  
+  if ((this.angle1 > 90) || (this.angle2 > 90) || (this.angle3 > 90)) {
+    return 'obtuse';
+  }
 }
