@@ -27,5 +27,7 @@ Angles.prototype.checkDegrees = function() {
     return 'obtuse';
   } else if ((this.angle1 === 90) && (this.angle2 === 45) && (this.angle3 === 45) || (this.angle2 === 90) && (this.angle1 === 45) && (this.angle3 === 45) || (this.angle3 === 90) && (this.angle2 === 45) && (this.angle1 === 45)) {
     return 'right';
+  } else if ((this.angle1 < 90) && (this.angle2 < 90) && (this.angle3 < 90)) {
+    return 'acute';
   }
 };

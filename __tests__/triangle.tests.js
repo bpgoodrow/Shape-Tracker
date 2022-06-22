@@ -41,5 +41,9 @@ describe('Angles', () => {
     const triangleAngles = new Angles(90, 45, 45);
     expect(triangleAngles.checkDegrees()).toEqual('right');
   });
+  test('should return a triangleAngles object with three angles less that 90', () => {
+    const triangleAngles = new Angles(72, 54, 54);
+    expect(triangleAngles.checkDegrees()).toEqual('acute');
+  });
 
 });
