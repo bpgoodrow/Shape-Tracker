@@ -37,5 +37,9 @@ describe('Angles', () => {
   const triangleAngles = new Angles(100, 50, 30);
   expect(triangleAngles.checkDegrees()).toEqual('obtuse');
   });
+  test('should return an angle object with one 90 degree, and two 45 degree angles', () => {
+    const triangleAngles = new Angles(90, 45, 45);
+    expect(triangleAngles.checkDegrees()).toEqual('right');
+  });
 
 });
